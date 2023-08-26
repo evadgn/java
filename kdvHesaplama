@@ -1,0 +1,15 @@
+import java.util.Scanner;                                                           // import java.util.Scanner
+public class kdvTutariHesaplama {                                                   //public class kdvTutariHesaplama {
+    public static void main(String[] args) {                                        //  public static void main(String[] args) {
+        double tutar;                                                               //   double tutar, kdvOran= 0.18, kdvTutar, kdvliTutar;
+        Scanner input= new Scanner(System.in);                                      //Scanner input= new Scanner(System.in);
+        System.out.println("Ücret tutarını giriniz: ");
+        tutar= input.nextDouble();                                                  // System.out.println("Ücret tutarını giriniz: ");
+                                                                                    // tutar= input.nextDouble();
+        double kdvlitoplam= tutar*118/100;
+        double kdv= tutar*18/100;                                                   // kdvTutar = tutar * kdvOran;
+        System.out.println("KDV'li fiyat:" + kdvlitoplam);                          //kdvliTutar = tutar + kdvTutar;
+        System.out.println("KDV tutarı:" + kdv );
+    }                                                                               // System.out.println("KDV tutarı: " + kdvTutar);
+}                                                                                   //System.out.println("KDV'li fiyat:" + kdvliTutar);
+                                                                                    // }}
