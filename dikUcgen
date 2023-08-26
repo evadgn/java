@@ -13,3 +13,5 @@ public class dikUcgen {
 
         c= Math.sqrt((a*a) + (b*b));
         System.out.println("Hipotenüs : " + c);
+}
+}
