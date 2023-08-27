@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class circle2 {
+    public static void main(String[] args) {
+        int r, angle;
+        double pi = 3.14, A;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Type the radius of circle : ");
+        r = input.nextInt();
+
+        System.out.println("Type the central angle of the circle or segment of the circle : ");
+        angle = input.nextInt();
+
+        A = pi * r * r * angle / 360;
+        
+        System.out.println("Area of the circle : " + A);
+
+    }
+}
