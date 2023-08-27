@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class groceryShopping {
+    public static void main(String[] args) {
+        double p, a, t, b, e, total;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("How many kilograms pears : ");
+        p = input.nextDouble();
+
+        System.out.println("How many kilograms of apples : ");
+        a = input.nextDouble();
+
+        System.out.println("How many kilograms of tomatoes : ");
+        t = input.nextDouble();
+
+        System.out.println("How many kilograms of bananas : ");
+        b = input.nextDouble();
+
+        System.out.println("How many kilograms of eggplants : ");
+        e = input.nextDouble();
+
+        total = (p * 2.14) + (a * 3.67) + (t * 1.11) + (b * 0.95) + (e * 5.0);
+        System.out.println("Total : " + total);
+    }
+}
