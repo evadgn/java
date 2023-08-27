@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class bodyMassIndex {
+    public static void main(String[] args) {
+        double m, h, b;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter your mass as kg: ");
+        m = input.nextDouble();
+
+        System.out.println("Enter your height as meter : ");
+        h = input.nextDouble();
+
+        b = m / (h * h);  //parantez kullanmak pay ve paydayı değiştirir
+
+        System.out.println("Your body mass index : " + b );
+
+    }
+}
