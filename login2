@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class login2 {
+        public static void main(String[] args) {
+            String userName, password;
+            int select;
+            Scanner input = new Scanner(System.in);
+
+            System.out.println("Enter your username : ");
+            userName = input.nextLine();
+
+            System.out.println("Enter your password : ");
+            password = input.nextLine();
+
+            if(userName.equals("patika") && password.equals("java123") ){ //string değişkenlerin bir şeye eşitliğini sorgularken == yerine equals ifadesini kullanıyoruz
+                System.out.println("Successful");
+            }else{
+
+                System.out.println("Uncessful attempt to login");
+                System.out.println("Do you want to reset your password?");
+                System.out.println("1- Yes \n 2- No");
+                select = input.nextInt();
+
+                if (select ==1){
+                    String newPassword;
+                    Scanner inp= new Scanner(System.in);
+
+                    System.out.println("Create your new password : ");
+                    newPassword = inp.nextLine();
+
+                    if (newPassword.equals("java123") || newPassword.equals(password)){
+                        System.out.println("Unsuccessful! Try again.");
+                    }else{
+                        System.out.println("Successful");
+                    }
+                }else{
+
+                }
+            }
+        }
+    }
+
