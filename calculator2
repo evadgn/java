@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class calculator2 {
+    public static void main(String[] args) {
+        int n1, n2, select;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter the the first number : ");
+        n1 = input.nextInt();
+
+        System.out.println("Enter the other number : ");
+        n2 = input.nextInt();
+
+        System.out.println("1- Addition \n 2- Substraction \n 3- Multplying \n 4- Dividing");
+        System.out.println("Selection :");
+        select = input.nextInt();
+
+        switch (select) {
+            case 1:
+                System.out.println("Addition : " + (n1 + n2));
+                break;
+            case 2:
+                System.out.println("Substraction : " + (n1 - n2));
+                break;
+            case 3:
+                System.out.println("Multiplying : " + (n1 * n2));
+                break;
+            case 4:
+                if (n2 != 0) {
+                    System.out.println("Dividing : " + (n1 / n2));
+                }else{
+                    System.out.println("A number cannot divided by zero!");
+                }
+                break;
+            default:
+                System.out.println("You've made a false selection. Give it a try again.");
+        }
+    }
+}
