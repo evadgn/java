@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class calculator {
+    public static void main(String[] args) {
+        int n1, n2, select;
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the first number :");
+        n1 = input.nextInt();
+
+        System.out.print("Enter the other number : ");
+        n2 = input.nextInt();
+
+        System.out.println("1- Addition \n 2- Substraction \n 3- Multiplying \n 4- Dividing");
+        System.out.print("Selection : ");
+        select = input.nextInt();
+
+        if (select == 1){
+            System.out.println("Addition : " + (n1 + n2));
+        }else if (select ==2){
+            System.out.println("Substarction : " + (n1 - n2));
+        }else if (select==3){
+            System.out.println("Multiplying : " + (n1 * n2));
+        }else if (select ==4) {
+            if (n2 != 0) {
+                System.out.println("Dividing : " + (n1 / n2));
+            } else {
+                System.out.println("A number cannot divided by zero!");
+            }
+        }else{
+            System.out.println("You've made a false selection. Give it a try again.");
+        }
+
+
+    }
+}
