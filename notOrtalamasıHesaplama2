@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class notOrtalamasiHesaplama2 {
+    public static void main(String[] args) {
+        int math, phys, turkish, chem, music;
+        double average;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter the mathematics mark :");
+        math = input.nextInt();
+
+        System.out.println("Enter the physics mark : ");
+        phys = input.nextInt();
+
+        System.out.println("Enter the turkish mark : ");
+        turkish = input.nextInt();
+
+        System.out.println("Enter the chemistry mark : ");
+        chem = input.nextInt();
+
+        System.out.println("Enter the music mark : ");
+        music = input.nextInt();
+
+        average = (math + phys + turkish + chem + music) / 6;
+        if (0 > math || 100 < math){
+            math = 0;
+        }else if( 0 > phys || 100 < phys){
+            phys = 0;
+        }else if( 0 > turkish || 100 < turkish){
+            turkish = 0;
+        }else if( 0 > chem || 100 < chem){
+            chem = 0;
+        }else if( 0 > music || 100 < music){
+            music = 0;
+        }
+
+        System.out.println("Average : " + average);
+        if (average>=55){
+            System.out.println("Congrats! You are failed!");
+        }else{
+            System.out.println("You are unfailed! See you next year!");
+        }
+        
+    }
+}
