@@ -1,0 +1,68 @@
+import java.util.Scanner;
+public class china {
+    public static void main(String[] args) {
+        int year, c ;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter the that you were born :  ");
+        year = input.nextInt();
+
+        if( year < 0 ){
+            System.out.println("You have to enter valid date!");
+        }
+
+        c = year % 12 ;
+
+        switch( c ){
+            case 0:
+                System.out.println("You do not need this. You are special already.");
+                break;
+
+            case 1:
+                System.out.println("You do not need this. You are special already.");
+                break;
+
+            case 2:
+                System.out.println("You do not need this. You are special already.");
+                break;
+
+            case 3:
+                System.out.println("You do not need this. You are special already.");
+                break;
+
+            case 4:
+                System.out.println("You do not need this. You are special already.");
+                break;
+
+            case 5:
+                System.out.println("You do not need this. You are special already.");
+                break;
+
+            case 6:
+                System.out.println("You do not need this. You are special already.");
+                break;
+
+            case 7:
+                System.out.println("You do not need this. You are special already.");
+                break;
+
+            case 8:
+                System.out.println("You do not need this. You are special already.");
+                break;
+
+            case 9:
+                System.out.println("You do not need this. You are special already.");
+                break;
+
+            case 10:
+                System.out.println("You do not need this. You are special already.");
+                break;
+
+            case 11:
+                System.out.println("You do not need this. You are special already.");
+
+        }
+
+
+    }
+}
