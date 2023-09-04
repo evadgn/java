@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class combination {
+    public static void main(String[] args) {
+        int k, m, total = 1, total2 = 1, total3 = 1;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter a number : ");
+        k = input.nextInt();
+
+        System.out.println("Enter another number : ");
+        m = input.nextInt();
+
+        for ( int i = 1; i <= k; i++){
+            total *= i;
+        }
+        for ( int h = 1; h <=m; h++){
+            total2 *= h;
+        }
+        for ( int y = 1; y <= k - m; y++){
+            total3 *= y;
+        }
+
+        System.out.println("Combination of these numbers : " + total / ( total2 * total3 ));
+
+
+    }
+}
