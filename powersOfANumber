@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class powersOfANumber {
+    public static void main(String[] args) {
+        int n, k, total = 1;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter the first number that is powers of : ");
+        n = input.nextInt();
+
+        System.out.println( "Enter the number which equals to how many powers of the number : ");
+        k = input.nextInt();
+
+        for ( int i = 1; i <= k; i++ ){
+            total *= n;
+        }
+        System.out.println( "Answer : " + total );
+    }
+}
